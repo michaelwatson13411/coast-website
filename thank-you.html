@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Thank you | COAST</title><link rel="stylesheet" href="coast.css"></head>
+<body data-page="thank-you">
+<header><a href="index.html" class="logo">COAST</a><nav><a href="index.html">Home</a><a href="index.html#shop">Shop</a><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></nav></header>
+<main><section class="checkout-section thank-you-section">
+<p class="checkout-tagline">✳ out of office. at the beach. ✳</p>
+<h1 id="thank-you-title">CONFIRMING YOUR ORDER</h1>
+<p class="checkout-description" id="thank-you-description">We’re checking your payment securely with Stripe.</p>
+<div class="checkout-form-box thank-you-card">
+<p class="checkout-notice">TEST ORDER — no real money was charged and no products will be shipped.</p>
+<p id="payment-status" role="status" aria-live="polite">Checking your order…</p>
+<button id="check-payment" class="place-order-button" type="button" hidden>CHECK PAYMENT STATUS</button>
+<a class="back-to-cart" href="index.html#shop">BACK TO THE SHOP →</a>
+<noscript><p>Enable JavaScript to verify your order.</p></noscript>
+</div>
+<div hidden><div id="checkout-items"></div><strong id="checkout-total"></strong><button id="pay-button" hidden disabled></button></div>
+</section></main><footer><p>&copy; 2026 COAST. All rights reserved.</p></footer>
+<script src="script.js"></script><script src="checkout.js"></script>
+</body></html>

@@ -1,0 +1,1183 @@
+@import url('https://fonts.googleapis.com/css?family=Art-nuvo:700|Georgia:400');
+
+body {
+  font-family: 'Georgia';
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Art-nuvo';
+  font-weight: 700;
+}
+
+html {font-size: 100%;} /* 16px */
+
+h1 {font-size: 3.053rem; /* 48.8px */}
+
+h2 {font-size: 2.442rem; /* 39.04px */}
+
+h3 {font-size: 1.954rem; /* 31.2px */}
+
+h4 {font-size: 1.563rem; /* 24.96px */}
+
+h5 {font-size: 1.250rem; /* 20px */}
+
+small {font-size: 0.800rem; /* 12.8px */}
+
+
+
+:root {
+    --aqua: #12BCC8;
+    --cream: #FFF1D2;
+    --pink: #FF6685;
+    --yellow: #FFD166;
+    --lagoon: #176B73;
+    --font-main: 'Art-nuvo', Georgia, serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: var(--lagoon);
+    color: var(--lagoon);
+    font-family: 'Georgia', serif;
+}
+
+header {
+    font-family: 'Art-nuvo', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 7%;
+    background-color: var(--aqua);
+    /* KEEP NAVIGATION VISIBLE */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    /* SUBTLE SHADOW */
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+#home {
+    scroll-margin-top: 100px;
+}
+.logo {
+    font-size: 32px;
+    font-weight: 900;
+    letter-spacing: 3px;
+    color: var(--lagoon);
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    gap: 28px;
+}
+
+nav a {
+    color: var(--lagoon);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--pink);
+}
+
+.hero {
+    background-color: var(--aqua);
+    min-height: 520px;
+    padding: 110px 8%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.eyebrow {
+    letter-spacing: 3px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.hero h1 {
+    font-size: clamp(48px, 7vw, 96px);
+    letter-spacing: -3px;
+    line-height: 1;
+    margin: 15px 0;
+}
+
+.button {
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px 30px;
+    font-weight: bold;
+    margin-top: 20px;
+    border: 2px solid var(--lagoon);
+    background-color: var(--pink);
+    color: white;
+
+    font-family: var(--font-main);
+    font-size: 16px;
+box-shadow: 4px 4px 0 var(--lagoon);
+    border: 2px solid var(--lagoon);
+    border-radius: 30px;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+}
+
+.button:hover {
+    background-color: var(--cream);
+    color: var(--lagoon);
+    transform: translate(3px, 3px);
+    box-shadow: 2px 2px 0 var(--lagoon);
+}
+
+
+.shop, .about {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.shop {
+    background-color: var(--cream);
+}
+
+.about {
+    background-color: var(--yellow);
+}
+
+footer {
+    background-color: var(--lagoon);
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero {
+        min-height: 440px;
+        padding: 70px 7%;
+    }
+}
+.hero h1 {
+    font-family: 'Art-nuvo', sans-serif;
+    font-size: clamp(55px, 8vw, 110px);
+    font-weight: normal;
+    line-height: 1.05;
+    letter-spacing: 1px;
+    color: var(--cream);
+    text-shadow: 6px 6px 0 var(--lagoon);
+    transform: rotate(-3deg);
+    margin: 30px 0;
+}
+/* DESKTOP SEASHELL GRAPHIC */
+
+.hero {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-shell {
+    position: absolute;
+
+    right: 5%;
+    top: 50%;
+
+    transform: translateY(-50%) rotate(12deg);
+
+    width: 35%;
+    max-width: 550px;
+    height: auto;
+
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* KEEP TEXT ABOVE THE SHELL */
+
+.hero h1,
+.hero p,
+.hero .button {
+    position: relative;
+    z-index: 2;
+}
+
+/* HIDE SHELL ON MOBILE AND TABLETS */
+
+@media (max-width: 900px) {
+    .hero-shell {
+        display: none;
+    }
+}
+/* ================================
+   COAST SHOP SECTION
+   ================================ */
+
+.shop {
+    background-color: var(--cream);
+    padding: 100px 8%;
+    text-align: center;
+}
+
+/* SHOP HEADLINE */
+
+.shop-tagline {
+    font-size: 15px;
+    letter-spacing: 4px;
+    color: var(--pink);
+    margin-bottom: 20px;
+}
+
+.shop h2 {
+    font-family: var(--font-main);
+    font-size: clamp(42px, 6vw, 75px);
+    color: var(--lagoon);
+    margin: 10px 0 20px;
+}
+
+.shop-description {
+    font-size: 18px;
+    color: var(--lagoon);
+}
+
+/* PRODUCT GRID */
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px;
+    margin-top: 60px;
+}
+
+/* PRODUCT CARDS */
+
+.product-card {
+    background-color: white;
+    border: 3px solid var(--lagoon);
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 0;
+
+    box-shadow: 7px 7px 0 var(--lagoon);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-8px) rotate(-1deg);
+    box-shadow: 10px 12px 0 var(--lagoon);
+}
+
+/* PRODUCT IMAGE AREA */
+
+.product-image {
+    height: 300px;
+    padding: 35px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover .product-image img {
+    transform: scale(1.08) rotate(4deg);
+}
+
+/* INDIVIDUAL PRODUCT COLORS */
+
+.product-image.yellow {
+    background-color: var(--yellow);
+}
+
+.product-image.pink {
+    background-color: #FFB6C8;
+}
+
+.product-image.blue {
+    background-color: #9DE4DD;
+}
+
+/* PRODUCT DETAILS */
+
+.product-info {
+    padding: 25px;
+    text-align: left;
+}
+
+.product-info h3 {
+    font-family: var(--font-main);
+    color: var(--lagoon);
+    font-size: 26px;
+    margin: 0 0 10px;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--lagoon);
+    margin: 0 0 20px;
+}
+
+/* ADD TO CART BUTTON */
+
+.cart-button {
+    width: 100%;
+    padding: 15px;
+
+    background-color: var(--pink);
+    color: white;
+
+    font-family: var(--font-main);
+    font-size: 16px;
+
+    border: 2px solid var(--lagoon);
+    border-radius: 30px;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+}
+
+.cart-button:hover {
+    background-color: var(--yellow);
+    color: var(--lagoon);
+    transform: translateY(-2px);
+}
+
+.cart-button:focus-visible {
+    outline: 3px solid var(--lagoon);
+    outline-offset: 3px;
+}
+
+/* TABLET */
+
+@media (max-width: 900px) {
+
+    .products {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .product-image {
+        height: 260px;
+    }
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .shop {
+        padding: 70px 6%;
+    }
+
+    .shop h2 {
+        font-size: 42px;
+    }
+
+    .shop-tagline {
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
+
+    .products {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .product-image {
+        height: 280px;
+    }
+
+    .product-info {
+        padding: 20px;
+    }
+
+    .carousel-arrow {
+        width: 34px;
+        height: 40px;
+        font-size: 17px;
+        border-width: 2px;
+    }
+
+    .shop-carousel .product-card {
+        flex-basis: 100%;
+    }
+
+    .shop-carousel .products {
+        gap: 15px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .shop-carousel .products {
+        scroll-behavior: auto;
+    }
+}
+/* =================================
+   COAST STICKER CAROUSEL
+   ================================= */
+
+/* MAIN CAROUSEL CONTAINER */
+
+.shop-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+
+    width: 100%;
+    margin-top: 55px;
+}
+
+/* HORIZONTAL SCROLLING */
+
+.shop-carousel .products {
+    display: flex;
+    gap: 25px;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+
+    width: 100%;
+    min-width: 0;
+
+    margin: 0;
+    padding: 12px 10px 25px;
+
+    scrollbar-width: none;
+}
+
+/* HIDE SCROLLBAR */
+
+.shop-carousel .products::-webkit-scrollbar {
+    display: none;
+}
+
+/* THREE STICKERS ON DESKTOP */
+
+.shop-carousel .product-card {
+    flex: 0 0 calc((100% - 50px) / 3);
+
+    min-width: 0;
+    scroll-snap-align: start;
+
+    box-shadow: 5px 5px 0 var(--lagoon);
+}
+
+/* CAROUSEL ARROWS */
+
+.carousel-arrow {
+    flex-shrink: 0;
+
+    width: 50px;
+    height: 50px;
+
+    background-color: var(--pink);
+    color: white;
+
+    border: 3px solid var(--lagoon);
+    border-radius: 50%;
+
+    font-size: 23px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    box-shadow: 4px 4px 0 var(--lagoon);
+
+    transition: all 0.2s ease;
+}
+
+/* ARROW HOVER EFFECT */
+
+.carousel-arrow:hover:not(:disabled) {
+    background-color: var(--aqua);
+    color: var(--lagoon);
+    transform: translate(3px, 3px);
+    box-shadow: 2px 2px 0 var(--lagoon);
+}
+
+
+/* DISABLED ARROWS */
+
+.carousel-arrow:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+/* TABLET VIEW */
+
+@media (max-width: 900px) {
+
+    .shop-carousel .product-card {
+        flex-basis: calc((100% - 25px) / 2);
+    }
+
+}
+
+/* MOBILE VIEW */
+
+@media (max-width: 600px) {
+
+    .shop-carousel {
+        gap: 8px;
+    }
+
+    .shop-carousel .product-card {
+        flex-basis: 100%;
+    }
+
+    .shop-carousel .products {
+        gap: 15px;
+        padding: 10px 5px 20px;
+    }
+
+    .carousel-arrow {
+        width: 34px;
+        height: 40px;
+        font-size: 17px;
+        border-width: 2px;
+    }
+
+}
+
+/* ACCESSIBILITY */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .shop-carousel .products {
+        scroll-behavior: auto;
+    }
+
+}
+/* ================================
+   COAST SHOPPING CART PAGE
+   ================================ */
+
+.cart-section {
+    min-height: 80vh;
+    background-color: var(--aqua);
+    padding: 90px 8%;
+    text-align: center;
+}
+
+/* CART HEADING */
+
+.cart-tagline {
+    font-size: 15px;
+    letter-spacing: 4px;
+    color: var(--lagoon);
+}
+
+.cart-section h1 {
+    font-family: 'Art-nuvo', sans-serif;
+    font-size: clamp(45px, 7vw, 85px);
+    color: var(--cream);
+    text-shadow: 5px 5px 0 var(--lagoon);
+    margin: 15px 0;
+}
+
+.cart-section > p {
+    font-size: 18px;
+}
+
+/* CART LAYOUT */
+
+.cart-container {
+    max-width: 1100px;
+    margin: 55px auto 0;
+
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+
+    gap: 30px;
+    align-items: start;
+}
+
+/* CART BOXES */
+
+#cart-items,
+.cart-summary {
+    background-color: var(--cream);
+    border: 3px solid var(--lagoon);
+    border-radius: 20px;
+
+    padding: 30px;
+    text-align: left;
+
+    box-shadow: 7px 7px 0 var(--lagoon);
+}
+
+/* INDIVIDUAL CART ITEMS */
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 20px;
+    padding: 20px 0;
+
+    border-bottom: 2px solid var(--lagoon);
+}
+
+.cart-item:last-child {
+    border-bottom: none;
+}
+
+.cart-item h3 {
+    font-family: 'Art-nuvo', sans-serif;
+    font-size: 22px;
+    margin: 0;
+}
+
+.cart-item p {
+    font-size: 17px;
+    margin: 8px 0 0;
+}
+
+/* QUANTITY CONTROLS */
+
+.cart-controls {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.cart-controls button {
+    width: 36px;
+    height: 36px;
+
+    background-color: var(--pink);
+    color: white;
+
+    border: 2px solid var(--lagoon);
+    border-radius: 50%;
+
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.cart-controls button:hover {
+    background-color: var(--yellow);
+    color: var(--lagoon);
+}
+
+/* ORDER SUMMARY */
+
+.cart-summary h2 {
+    font-family: 'Art-nuvo', sans-serif;
+    font-size: 25px;
+    margin-top: 0;
+}
+
+.subtotal {
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 19px;
+    font-weight: bold;
+
+    border-top: 2px solid var(--lagoon);
+    padding-top: 20px;
+}
+
+.shipping-note {
+    font-size: 13px;
+    opacity: 0.8;
+}
+
+/* CHECKOUT BUTTON */
+
+.checkout-button {
+    display: block;
+    width: 100%;
+
+    background-color: var(--pink);
+    color: white;
+
+    padding: 16px;
+
+    border: 3px solid var(--lagoon);
+    border-radius: 40px;
+
+    font-family: 'Art-nuvo', sans-serif;
+    font-size: 18px;
+
+    cursor: pointer;
+    box-shadow: 4px 4px 0 var(--lagoon);
+
+    margin-top: 30px;
+    transition: all 0.2s ease;
+}
+
+.checkout-button:hover:not(:disabled) {
+    background-color: var(--aqua);
+    color: var(--lagoon);
+    transform: translate(3px, 3px);
+    box-shadow: 2px 2px 0 var(--lagoon);
+    transition: all 0.2s ease;
+}
+
+.checkout-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transition: all 0.2s ease;
+}
+
+/* RETURN TO SHOP */
+
+.continue-shopping {
+    display: block;
+    text-align: center;
+
+    margin-top: 25px;
+
+    color: var(--lagoon);
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.continue-shopping:hover {
+    color: var(--pink);
+    
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .cart-section {
+        padding: 70px 6%;
+    }
+
+    .cart-container {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    #cart-items,
+    .cart-summary {
+        padding: 20px;
+    }
+
+    .cart-item {
+        flex-wrap: wrap;
+    }
+
+    .cart-section h1 {
+        font-size: 50px;
+    }
+}
+/* ================================
+   COAST CONTACT SECTION
+   ================================ */
+
+.contact-section {
+    background-color: var(--cream);
+    padding: 100px 8%;
+    text-align: center;
+}
+
+.contact-tagline {
+    color: var(--pink);
+    font-size: 15px;
+    letter-spacing: 4px;
+    margin-bottom: 15px;
+}
+
+.contact-section h2 {
+    font-family: 'Art-nuvo', sans-serif;
+    font-size: clamp(42px, 6vw, 75px);
+    color: var(--lagoon);
+    margin: 10px 0 20px;
+}
+
+.contact-description {
+    font-size: 18px;
+    max-width: 550px;
+    margin: 0 auto 45px;
+    line-height: 1.6;
+}
+
+/* FORM CONTAINER */
+
+.contact-form {
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 40px;
+
+    background-color: white;
+    border: 3px solid var(--lagoon);
+    border-radius: 22px;
+
+    box-shadow: 8px 8px 0 var(--lagoon);
+    text-align: left;
+}
+
+/* INPUT GROUPS */
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    font-family: 'Art-nuvo', sans-serif;
+    font-size: 17px;
+    color: var(--lagoon);
+}
+
+/* INPUTS */
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 15px 18px;
+
+    background-color: var(--cream);
+    border: 2px solid var(--lagoon);
+    border-radius: 12px;
+
+    color: var(--lagoon);
+    font-family: Georgia, serif;
+    font-size: 16px;
+
+    outline: none;
+    transition: 0.2s ease;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 130px;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: var(--pink);
+    box-shadow: 0 0 0 3px rgba(255, 102, 133, 0.2);
+}
+
+/* SUBMIT BUTTON */
+
+.contact-button {
+    width: 100%;
+    padding: 17px 25px;
+
+    background-color: var(--pink);
+    color: white;
+
+    border: 3px solid var(--lagoon);
+    border-radius: 40px;
+
+    box-shadow: 5px 5px 0 var(--lagoon);
+
+    font-family: 'Art-nuvo', sans-serif;
+    font-size: 18px;
+
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.contact-button:hover {
+    background-color: var(--aqua);
+    color: var(--lagoon);
+    transform: translate(3px, 3px);
+    box-shadow: 2px 2px 0 var(--lagoon);
+}
+
+/* STATUS MESSAGE */
+
+.form-status {
+    margin: 15px 0 0;
+    font-size: 14px;
+    text-align: center;
+}
+
+.form-status:empty {
+    display: none;
+}
+
+/* MOBILE STYLING */
+
+@media (max-width: 600px) {
+
+    .contact-section {
+        padding: 70px 6%;
+    }
+
+    .contact-section h2 {
+        font-size: 42px;
+    }
+
+    .contact-form {
+        padding: 25px 20px;
+    }
+
+    .contact-tagline {
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
+}
+/* ================================
+   COAST CHECKOUT PAGE
+   ================================ */
+
+.checkout-section {
+    min-height: 85vh;
+    background-color: var(--aqua);
+    padding: 90px 8%;
+    text-align: center;
+}
+
+.checkout-tagline {
+    color: var(--lagoon);
+    font-size: 14px;
+    letter-spacing: 4px;
+}
+
+.checkout-section h1 {
+    font-family: 'Art-nuvo', sans-serif;
+    font-size: clamp(48px, 7vw, 90px);
+    color: var(--cream);
+    text-shadow: 5px 5px 0 var(--lagoon);
+    margin: 20px 0;
+}
+
+.checkout-description {
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+/* MAIN TWO-COLUMN LAYOUT */
+
+.checkout-container {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 30px;
+    align-items: start;
+
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* CREAM PANELS */
+
+.checkout-form-box,
+.checkout-summary {
+    background-color: var(--cream);
+    border: 3px solid var(--lagoon);
+    border-radius: 22px;
+    box-shadow: 7px 7px 0 var(--lagoon);
+
+    padding: 35px;
+    text-align: left;
+}
+
+.checkout-form-box h2,
+.checkout-summary h2 {
+    font-family: 'Art-nuvo', sans-serif;
+    font-size: 27px;
+    color: var(--lagoon);
+    margin: 0 0 30px;
+}
+
+/* SHIPPING INPUTS */
+
+.checkout-form-box .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    margin-bottom: 20px;
+}
+
+.checkout-form-box label {
+    font-family: 'Art-nuvo', sans-serif;
+    font-size: 15px;
+}
+
+.checkout-form-box input {
+    width: 100%;
+    padding: 15px;
+
+    background-color: white;
+    border: 2px solid var(--lagoon);
+    border-radius: 12px;
+
+    color: var(--lagoon);
+    font-family: Georgia, serif;
+    font-size: 16px;
+}
+
+.checkout-form-box input:focus {
+    outline: 3px solid var(--pink);
+    outline-offset: 2px;
+}
+
+/* TWO FIELDS SIDE BY SIDE */
+
+.checkout-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* ORDER SUMMARY ITEMS */
+
+.checkout-item {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+
+    padding: 15px 0;
+    border-bottom: 1px solid var(--lagoon);
+}
+
+.checkout-item h3 {
+    font-family: 'Art-nuvo', sans-serif;
+    font-size: 18px;
+    margin: 0 0 5px;
+}
+
+.checkout-item p {
+    font-size: 14px;
+    margin: 0;
+}
+
+.checkout-item-price {
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+/* SUBTOTAL */
+
+.checkout-total {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+
+    margin-top: 25px;
+    padding-top: 20px;
+
+    border-top: 2px solid var(--lagoon);
+    font-size: 22px;
+}
+
+.checkout-shipping-note,
+.checkout-notice {
+    font-size: 13px;
+    line-height: 1.6;
+    margin-top: 20px;
+}
+
+/* PAYMENT BUTTON */
+
+.place-order-button {
+    width: 100%;
+    padding: 17px;
+
+    background-color: var(--pink);
+    color: white;
+
+    border: 3px solid var(--lagoon);
+    border-radius: 40px;
+
+    font-family: 'Art-nuvo', sans-serif;
+    font-size: 17px;
+
+    margin-top: 25px;
+}
+
+.place-order-button:disabled {
+    opacity: 0.65;
+    cursor: not-allowed;
+}
+
+/* BACK TO CART */
+
+.back-to-cart {
+    display: block;
+    margin-top: 25px;
+    text-align: center;
+
+    color: var(--lagoon);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.back-to-cart:hover {
+    color: var(--pink);
+}
+
+/* MOBILE */
+
+@media (max-width: 750px) {
+
+    .checkout-section {
+        padding: 65px 6%;
+    }
+
+    .checkout-container {
+        grid-template-columns: 1fr;
+    }
+
+    .checkout-form-box,
+    .checkout-summary {
+        padding: 25px 20px;
+    }
+
+    .checkout-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .checkout-section h1 {
+        font-size: 50px;
+    }
+}
+/* Verified order confirmation */
+.thank-you-section { min-height: 65vh; }
+.thank-you-section h1 { max-width: 950px; margin-left: auto; margin-right: auto; font-size: clamp(36px, 6vw, 72px); }
+.thank-you-card { max-width: 650px; margin: 32px auto 0; text-align: center; }
+.thank-you-card #payment-status { line-height: 1.7; }

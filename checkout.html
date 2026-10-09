@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Checkout | COAST</title>
+    <link rel="stylesheet" href="coast.css">
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html" class="logo">COAST</a>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="index.html#shop">Shop</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#contact">Contact</a>
+            <a href="cart.html">
+                Cart (<span id="cart-count">0</span>)
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="checkout-section">
+
+            <p class="checkout-tagline">
+                ✳ ALMOST BEACH-BOUND ✳
+            </p>
+
+            <h1>CHECKOUT</h1>
+
+            <p class="checkout-description">
+                Your stickers are almost on their way!
+            </p>
+
+            <div class="checkout-container">
+
+                <!-- CUSTOMER DETAILS -->
+
+                <div class="checkout-form-box">
+
+                    <h2>SECURE CHECKOUT</h2>
+                    <p>Review your stickers, then continue to Stripe to enter your contact details, shipping address, and payment information.</p>
+                    <p>US shipping options:</p>
+                    <ul>
+                        <li>$2 envelope shipping — no tracking</li>
+                        <li>$9.95 parcel shipping — tracking included</li>
+                    </ul>
+                    <p class="checkout-notice">TEST CHECKOUT — no real money will be charged.</p>
+                    <p id="payment-status" class="checkout-notice" role="status" aria-live="polite">Checking checkout availability…</p>
+                    <button id="check-payment" class="place-order-button" type="button" hidden>CHECK PAYMENT STATUS</button>
+                    <noscript><p>Please enable JavaScript to use secure checkout.</p></noscript>
+
+                </div>
+
+                <!-- ORDER SUMMARY -->
+
+                <aside class="checkout-summary">
+
+                    <h2>YOUR BEACH BAG</h2>
+
+                    <div id="checkout-items">
+                        <p>Your cart is empty.</p>
+                    </div>
+
+                    <div class="checkout-total">
+                        <span>Subtotal</span>
+                        <strong id="checkout-total">
+                            $0.00
+                        </strong>
+                    </div>
+
+                    <p class="checkout-shipping-note">
+                        Choose shipping on Stripe. Applicable taxes are calculated there once tax setup is ready.
+                    </p>
+
+                    <button
+                        class="place-order-button"
+                        id="pay-button"
+                        type="button"
+                        disabled>
+                        CONTINUE TO SECURE CHECKOUT
+                    </button>
+
+                    <a href="cart.html"
+                       class="back-to-cart">
+                        ← BACK TO CART
+                    </a>
+
+                </aside>
+
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            &copy; 2026 COAST.
+            All rights reserved.
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="checkout.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Your Cart | COAST</title>
+
+    <link rel="stylesheet" href="coast.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+
+    <header>
+        <a href="index.html" class="logo">COAST</a>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="index.html#shop">Shop</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#contact">Contact</a>
+            <a href="cart.html">
+                Cart (<span id="cart-count">0</span>)
+            </a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- SHOPPING CART -->
+
+        <section id="cart" class="cart-section">
+
+            <p class="cart-tagline">
+                ✳ YOUR BEACH BAG ✳
+            </p>
+
+            <h1>YOUR CART</h1>
+
+            <p>
+                Good things come in small packages.
+            </p>
+
+            <div class="cart-container">
+
+                <!-- CUSTOMER'S PRODUCTS -->
+
+                <div id="cart-items">
+
+                    <p>Your beach bag is empty!</p>
+
+                </div>
+
+                <!-- ORDER SUMMARY -->
+
+                <div class="cart-summary">
+
+                    <h2>ORDER SUMMARY</h2>
+
+                    <p class="subtotal">
+                        <span>Subtotal</span>
+                        <span id="cart-total">
+                            $0.00
+                        </span>
+                    </p>
+
+                    <p class="shipping-note">
+                        Shipping calculated at checkout.
+                    </p>
+
+                    <button
+                        class="checkout-button"
+                        type="button">
+                        CHECKOUT
+                    </button>
+
+                    <a href="index.html#shop"
+                       class="continue-shopping">
+                        ← CONTINUE SHOPPING
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer id="contact">
+        <p>
+            &copy; 2026 COAST.
+            All rights reserved.
+        </p>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+</body>
+</html>

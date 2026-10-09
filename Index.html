@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COAST | Made for the Coast</title>
+    <link rel="stylesheet" href="coast.css">
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">COAST</a>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#shop">Shop</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a href="cart.html">
+        Cart (<span id="cart-count">0</span>)
+    </a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <p class="eyebrow">out of office. at the beach.</p>
+            <h1>SUNSHINE<br>STATE OF MIND</h1>
+            <p>stickers inspired by the coast.</p>
+            <a href="#shop" class="button">Explore COAST</a>
+        <!-- Decorative seashell graphic -->
+    <img src="seashell.png"
+        alt=""
+        class="hero-shell"
+    >
+        </section>
+
+        <!-- COAST SHOP SECTION -->
+
+<section id="shop" class="shop">
+
+    <p class="shop-tagline">
+        ✳ THE COAST COLLECTION ✳
+    </p>
+
+    <h2>SHOP THE COAST</h2>
+
+    <p class="shop-description">
+        A little sunshine for wherever you go.
+    </p>
+
+    <div class="shop-carousel">
+
+    <!-- LEFT ARROW -->
+    <button
+        class="carousel-arrow prev"
+        type="button"
+        aria-label="Previous stickers">
+        &#10094;
+    </button>
+
+    <!-- STICKER CAROUSEL -->
+    <div class="products" id="stickerCarousel">
+
+        <!-- STICKER 1 -->
+        <article class="product-card">
+            <div class="product-image yellow">
+                <img src="images/sticker1.png"
+                     alt="Sticker 1">
+            </div>
+
+            <div class="product-info">
+                <h3>Sticker 1</h3>
+                <p class="price">$4.00</p>
+                <button
+    class="cart-button"
+    type="button"
+    data-id="sticker1"
+    data-name="Sticker 1"
+    data-price="4.00">
+    ADD TO CART
+</button>
+            </div>
+        </article>
+
+        <!-- STICKER 2 -->
+        <article class="product-card">
+            <div class="product-image pink">
+                <img src="images/sticker2.png"
+                     alt="Sticker 2">
+            </div>
+
+            <div class="product-info">
+                <h3>Sticker 2</h3>
+                <p class="price">$4.00</p>
+                <button
+    class="cart-button"
+    type="button"
+    data-id="sticker2"
+    data-name="Sticker 2"
+    data-price="4.00">
+    ADD TO CART
+</button>
+            </div>
+        </article>
+
+        <!-- STICKER 3 -->
+        <article class="product-card">
+            <div class="product-image blue">
+                <img src="images/sticker3.png"
+                     alt="Sticker 3">
+            </div>
+
+            <div class="product-info">
+                <h3>Sticker 3</h3>
+                <p class="price">$4.00</p>
+                <button
+    class="cart-button"
+    type="button"
+    data-id="sticker3"
+    data-name="Sticker 3"
+    data-price="4.00">
+    ADD TO CART
+</button>
+            </div>
+        </article>
+
+        <!-- STICKER 4 -->
+        <article class="product-card">
+            <div class="product-image yellow">
+                <img src="images/sticker4.png"
+                     alt="Sticker 4">
+            </div>
+
+            <div class="product-info">
+                <h3>Sticker Four</h3>
+                <p class="price">$4.00</p>
+                <button
+    class="cart-button"
+    type="button"
+    data-id="sticker4"
+    data-name="Sticker 4"
+    data-price="4.00">
+    ADD TO CART
+</button>
+            </div>
+        </article>
+
+        <!-- STICKER 5 -->
+        <article class="product-card">
+            <div class="product-image pink">
+                <img src="images/sticker5.png"
+                     alt="Sticker 5">
+            </div>
+
+            <div class="product-info">
+                <h3>Sticker 5</h3>
+                <p class="price">$4.00</p>
+                <button
+    class="cart-button"
+    type="button"
+    data-id="sticker5"
+    data-name="Sticker 5"
+    data-price="4.00">
+    ADD TO CART
+</button>
+            </div>
+        </article>
+
+    </div>
+
+    <!-- RIGHT ARROW -->
+    <button
+        class="carousel-arrow next"
+        type="button"
+        aria-label="Next stickers">
+        &#10095;
+    </button>
+
+</div>
+
+</section>
+
+        <section id="about" class="about">
+            <h2>About Coast</h2>
+            <p>
+At Coast, we believe the little things make life more colorful. Inspired by coastal living, creativity, and self-expression, we create stickers that bring personality to your everyday essentials.
+
+Whether you're decorating your water bottle, laptop, or anything in between, our stickers are designed to help you express your individuality and add a little sunshine wherever you go.</p>
+
+<p>Our mission is simple: to create fun and unique designs that make everyday life a little brighter.</p>
+
+<h5>Coast — Stick with us.</h5>
+        </section>
+
+<!-- COAST CONTACT SECTION -->
+
+<section id="contact" class="contact-section">
+
+    <p class="contact-tagline">
+        ✳ DROP US A LINE ✳
+    </p>
+
+    <h2>CONTACT COAST</h2>
+
+    <p class="contact-description">
+        Questions, ideas, or just saying hey?
+        We'd love to hear from you!
+    </p>
+
+    <form
+    class="contact-form"
+    id="contactForm"
+    action="https://formspree.io/f/xyekwbll"
+    method="POST">
+
+        <div class="form-group">
+            <label for="contactName">YOUR NAME</label>
+            <input
+                type="text"
+                id="contactName"
+                name="name"
+                placeholder="Your name"
+                autocomplete="name"
+                required>
+        </div>
+
+        <div class="form-group">
+            <label for="contactEmail">EMAIL ADDRESS</label>
+            <input
+                type="email"
+                id="contactEmail"
+                name="email"
+                placeholder="you@example.com"
+                autocomplete="email"
+                required>
+        </div>
+
+        <div class="form-group">
+            <label for="contactSubject">SUBJECT</label>
+            <select
+                id="contactSubject"
+                name="subject"
+                required>
+
+                <option value="" disabled selected>
+                    Select a subject
+                </option>
+
+                <option value="General Question">
+                    General Question
+                </option>
+
+                <option value="Order Support">
+                    Order Support
+                </option>
+
+                <option value="Collaboration">
+                    Collaboration
+                </option>
+
+                <option value="Other">
+                    Other
+                </option>
+
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="contactMessage">MESSAGE</label>
+            <textarea
+                id="contactMessage"
+                name="message"
+                rows="5"
+                placeholder="What's on your mind?"
+                required></textarea>
+        </div>
+
+        <button type="submit" class="contact-button">
+            SEND MESSAGE ↗
+        </button>
+
+        <p id="formStatus"
+           class="form-status"
+           role="status"
+           aria-live="polite"></p>
+
+    </form>
+
+</section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 COAST. All rights reserved.</p>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>
